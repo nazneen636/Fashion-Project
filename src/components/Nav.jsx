@@ -11,24 +11,17 @@ const Nav = () => {
   let [show, setShow] = useState(false);
 
   useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth >= 768) {
-        setShow(true); // Show the menu by default for larger screens
+    function size() {
+      if (window.innerWidth < 768) {
+        setShow(false);
       } else {
-        setShow(false); // Hide the menu by default for mobile
+        setShow(true);
       }
     }
 
-    // Set the initial state based on screen size
-    handleResize();
+    size();
 
-    // Add event listener for resizing
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    window.addEventListener("resize", size);
   }, []);
 
   return (

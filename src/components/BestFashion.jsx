@@ -44,18 +44,28 @@ Since 2010"
             elementum non viverra.
           </p>
         </div>
-        <div className="overlay absolute left-[537px] top-[614px] z-0 py-[71px] box-border pl-[76px] pr-[42px] rounded-[20px] bg-box-color flex gap-[86px]">
-          <div className="flex flex-col items-center justify-center relative after:bg-[#00000075] after:absolute after:h-[143px] after:w-[1px] after:right-[-27px]">
-            <h3 className="font-podkova font-bold text-[64px] ">2010</h3>
-            <p className="font-poppins font-medium text-[28px]">Founded</p>
+        <div className="overlay static md:absolute left-[537px] top-[614px] z-0 py-4 md:py-[71px] box-border px-4 md:px-0 md:pl-[76px] md:pr-[42px] rounded-md md:rounded-[20px] bg-box-color flex gap-6 md:gap-[86px] mt-4 md:mt-0">
+          <div className="flex flex-col items-center justify-center relative after:bg-[#00000075] after:absolute after:h-12 md:after:h-[143px] after:w-[1px] after:right-[-11px] md:after:right-[-27px]">
+            <h3 className="font-podkova font-bold text-xl md:text-[64px] md:leading-[180%]">
+              2010
+            </h3>
+            <p className="font-poppins font-medium text-sm md:text-[28px]">
+              Founded
+            </p>
           </div>
-          <div className="flex flex-col items-center justify-center relative after:bg-[#00000075] after:absolute after:h-[143px] after:w-[1px] after:right-[-44px]">
-            <h3 className="font-podkova font-bold text-[64px] ">5000+</h3>
-            <p className="font-poppins font-medium text-[28px]">Product Sold</p>
+          <div className="flex flex-col items-center justify-center relative after:bg-[#00000075] after:absolute after:h-12 md:after:h-[143px] after:w-[1px] after:right-[-11px] md:after:right-[-44px]">
+            <h3 className="font-podkova font-bold text-xl md:text-[64px] md:leading-[180%]">
+              5000+
+            </h3>
+            <p className="font-poppins font-medium text-sm md:text-[28px]">
+              Product Sold
+            </p>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h3 className="font-podkova font-bold text-[64px] ">4500+</h3>
-            <p className="text-nowrap font-poppins font-medium text-[28px]">
+            <h3 className="font-podkova font-bold text-xl md:text-[64px] md:leading-[180%]">
+              4500+
+            </h3>
+            <p className="text-nowrap font-poppins font-medium text-sm md:text-[28px]">
               Best Reviews
             </p>
           </div>

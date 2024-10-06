@@ -7,7 +7,7 @@ export default {
   theme: {
     fontFamily: {
       'poppins': ["Poppins", 'sans-serif'],
-      'podkova': ["Podkova", 'serif'],
+      'podkova': ["Podkova", 'system-ui'],
       'frank-ruhl-libre': ["Frank Ruhl Libre", 'serif'],
     },
     extend: {

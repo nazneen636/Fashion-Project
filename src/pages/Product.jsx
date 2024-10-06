@@ -52,7 +52,7 @@ const Product = () => {
           src={grayDot}
           alt=""
         />
-        <div className="relative">
+        <div className="relative mb-4 md:mb-0">
           <Title
             className="py-3 pl-4 md:pl-0 md:py-12 bg-[#FDBB57] md:bg-transparent md:text-center"
             titleText="Our Product"

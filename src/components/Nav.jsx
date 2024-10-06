@@ -12,10 +12,10 @@ const Nav = () => {
 
   useEffect(() => {
     function size() {
-      if (window.innerWidth < 768) {
-        setShow(false);
+      if (window.innerWidth >= 768) {
+        setShow(true); // Set to true only for desktop
       } else {
-        setShow(true);
+        setShow(false); // Hide the navbar for mobile by default
       }
     }
 

@@ -70,7 +70,7 @@ const products = [
 
 const NewArrival = () => {
   return (
-    <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-4 gap-x-[30px] gap-y-[60px]">
+    <div className="relative px-4 md:px-0 z-10 grid grid-cols-1 items-center md:grid-cols-4 gap-x-[30px] gap-y-[60px]">
       {products.map((item, index) => (
         <ProductItem
           key={index}

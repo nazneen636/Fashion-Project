@@ -180,7 +180,7 @@ const Product = () => {
         </div>
         <ul
           className={`w-full py-2 md:py-0 md:bg-transparent bg-slate-800 md:w-auto absolute z-10 md:static bottom-[104px] flex gap-3 md:gap-[60px] items-start md:items-center flex-col md:flex-row md:bg-none duration-500 transition-all ${
-            show ? "opacity-100 left-0" : "opacity-0 left-[-100px]"
+            show ? "opacity-100 left-0" : "opacity-0 left-[-500px]"
           }`}
         >
           <NavLi

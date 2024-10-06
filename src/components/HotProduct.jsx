@@ -34,35 +34,35 @@ const products = [
   {
     id: 4,
     img: Product4,
-    title: "Sweater Shirt",
+    title: "Blue Bombers",
     oldPrice: 45.99,
     newPrice: 35.99,
   },
   {
     id: 5,
     img: Product5,
-    title: "Pastel Long Sleeve",
+    title: "Jeans Jacket",
     oldPrice: 45.99,
     newPrice: 35.99,
   },
   {
     id: 6,
     img: Product6,
-    title: "T-Shirt orange",
+    title: "Denim shirt",
     oldPrice: 45.99,
     newPrice: 35.99,
   },
   {
     id: 7,
     img: Product7,
-    title: "Pastel Long Sleeve",
+    title: "Red Suede sweater",
     oldPrice: 45.99,
     newPrice: 35.99,
   },
   {
     id: 8,
     img: Product8,
-    title: "T-Shirt orange",
+    title: "Leather Brown Jacket",
     oldPrice: 45.99,
     newPrice: 35.99,
   },
@@ -70,7 +70,10 @@ const products = [
 
 const HotProduct = () => {
   return (
-    <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-x-[30px] gap-y-[60px]">
+    <div
+      id="hotProduct"
+      className="relative w-full z-10 grid grid-cols-1 md:grid-cols-4 gap-x-[30px] gap-y-[60px]"
+    >
       {products.map((item, index) => (
         <ProductItem
           key={index}

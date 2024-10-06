@@ -1,3 +1,19 @@
-.para {
-    @apply text-sm text-gray-700; /* Tailwind utility classes */
-  }
+.slider-container .slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-container .slick-slide {
+  padding: 0; /* Remove padding for this slider only */
+}
+
+.slider-container .slick-list {
+  margin: 0;
+}
+
+.active-link2{
+  @apply relative md:after:absolute md:after:bg-white md:after:w-full md:after:h-[3px] md:after:left-0 md:after:top-full  md:after:content-[''] text-[#ca8e33] md:text-white
+}
+.active-link{
+  @apply relative md:after:absolute md:after:bg-black md:after:w-full md:after:h-[3px] md:after:left-0 md:after:top-full  md:after:content-[''] text-[#ca8e33] md:text-black
+}

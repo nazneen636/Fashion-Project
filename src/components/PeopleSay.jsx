@@ -105,7 +105,7 @@ function SamplePrevArrow(props) {
         position: "absolute",
         left: "18px",
         top: "315px",
-        zIndex: "20",
+        zIndex: "10",
       }}
       onClick={onClick}
     >
@@ -191,7 +191,7 @@ const PeopleSay = () => {
                 position: "absolute",
                 bottom: "-80px",
                 left: "50%",
-                transform: "translateX(-50%)",
+                // transform: "translateX(-50%)",
                 padding: "0px",
               }}
             >
@@ -213,9 +213,12 @@ const PeopleSay = () => {
     ],
   };
   return (
-    <div className="mt-[119px]">
-      <Title className="text-center" titleText="What People Say About Us" />
-      <p className="text-center my-10 text-xl tracking-wide">
+    <div className="md:mt-[119px] mt-8 md:pb-[180px]">
+      <Title
+        className="text-center text-[22px]"
+        titleText="What People Say About Us"
+      />
+      <p className="text-center my-3 md:my-10 text-sm px-2 md:px0 md:text-xl tracking-wide">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac neque, velit
         tortor quam at donec etiam.
       </p>

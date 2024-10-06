@@ -9,7 +9,7 @@ import collectionRec from "/collectionRec.png";
 const NewCollection = () => {
   return (
     <div>
-      <Container className="my-8 md:my-[224px]">
+      <Container className="px-4 md:px-0 my-8 md:my-[224px]">
         <Title
           className="mb-5 md:mb-[108px] text-center"
           titleText="New Collection"

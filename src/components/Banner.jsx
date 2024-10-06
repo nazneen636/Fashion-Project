@@ -6,7 +6,7 @@ import dots from "/bannerDots.png";
 const Banner = () => {
   return (
     <div className="bg-banner-color pb-8 md:pb-[178px]">
-      <Container className="pt-7 md:pt-0 flex flex-col md:flex-row gap-10 md:gap-0 md:justify-between md:items-center">
+      <Container className="pt-7 px-4 md:px-0 md:pt-0 flex flex-col md:flex-row gap-10 md:gap-0 md:justify-between md:items-center">
         <div className="left">
           <h1 className="max-w-[454px] font-semibold  text-[34px] md:text-[64px]">
             Find The Best Fashion Style For You

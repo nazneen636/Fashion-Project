@@ -6,7 +6,7 @@ import grayDot from "/grayDot.png";
 
 const Deal = () => {
   return (
-    <div className="mt-10 md:mt-[150px] md:pl-[75px] md:pr-[60px] bg-banner-color flex flex-col md:flex-row justify-between">
+    <div className="mt-10 md:mt-[150px] md:pl-[75px] md:pr-[60px] px-4 md:px-0 bg-banner-color flex flex-col md:flex-row justify-between">
       <div className="left">
         <h2 className="mt-6 md:mt-[105px] font-bold text-4xl md:text-[64px] font-frank-ruhl-libre">
           Deal Of The Day
@@ -16,7 +16,7 @@ const Deal = () => {
           velit tortor quam at donec etiam bibendum sagittis.
         </p>
         <CountdownTimer targetDate="2024-10-31" />
-        <button className="my-6 md:mt-[70px]  w-full md:w-auto bg-black rounded-[10px] text-xl md:text-2xl text-white font-semibold py-2 md:py-[23px] md:px-[86px]">
+        <button className="my-6 md:mt-[70px]  w-full md:w-auto bg-black hover:bg-white hover:text-black duration-300 transition-all rounded-[10px] text-xl md:text-2xl text-white font-semibold py-2 md:py-[23px] md:px-[86px]">
           SHOP NOW
         </button>
       </div>

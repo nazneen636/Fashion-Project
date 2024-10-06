@@ -63,19 +63,19 @@ const SignIn = () => {
   };
   return (
     <div>
-      <Container className="overflow-hidden max-w-[1868px] flex flex-col md:flex-row items-center justify-center md:bg-banner-color pb-6  md:py-[105px] md:px-[214px] relative">
+      <Container className="overflow-hidden max-w-[1868px] flex flex-col md:flex-row items-center justify-center md:bg-banner-color pb-6 px-4  md:py-[105px] md:px-[214px] relative">
         <img
-          className="hidden md:block absolute right-[244px] top-[150px]"
+          className="md:w-auto w-24 md:block absolute right-8 top-5 md:right-[244px] md:top-[150px]"
           src={mdLogo}
           alt={mdLogo}
         />
         <img
-          className="block md:hidden w-16 absolute right-4 top-4"
-          src={smLogo}
-          alt={smLogo}
+          className="block md:hidden h-[450px] w-full object-cover"
+          src={sign}
+          alt=""
         />
-        <div className="left h-auto md:h-[1060px] bg-white flex flex-col items-center justify-center gap-6 px-24 py-0 rounded-tl-[20px] rounded-bl-[20px]">
-          <Title className="mt-14 md:mt-10" titleText="Get Started" />
+        <div className="left h-auto md:h-[1060px] bg-white flex flex-col items-center justify-center px-0 md:px-24 gap-6 py-0 rounded-tl-[20px] rounded-bl-[20px]">
+          <Title className="mt-5 md:mt-10" titleText="Get Started" />
           <p className="font-frank-ruhl-libre font-medium text-xl md:text-2xl text-[#868686]">
             Already have an account?{" "}
             <a href="/login" className="text-[#F59C15]">
@@ -102,64 +102,64 @@ const SignIn = () => {
             </a>
           </div>
           <div className="form mt-0 md:mt-7 w-full flex items-center justify-center flex-col gap-7 md:gap-9">
-            <div className="w-auto md:w-full flex flex-col gap-2 md:gap-5 relative">
+            <div className="w-full flex flex-col gap-2 md:gap-5 relative">
               <label
                 htmlFor="name"
-                className="font-medium font-frank-ruhl-libre text-2xl text-[#868686]"
+                className="w-full font-medium font-frank-ruhl-libre text-xl md:text-2xl text-[#868686]"
               >
                 Full name
               </label>
               <input
                 onChange={manageName}
                 value={name}
-                className="border border-[#C5C5C5] outline-none bg-transparent rounded-[20px] py-2 md:py-3 px-4 text-2xl"
+                className="border border-[#C5C5C5] outline-none bg-transparent rounded-[20px] py-2 md:py-3 px-4 w-full text-xl md:text-2xl"
                 type="text"
                 id="name"
               />
-              <p className="text-xl text-red-800 absolute left-0 top-[103%]">
+              <p className="text-sm md:text-xl text-red-800 absolute left-0 top-[103%]">
                 {nameErr}
               </p>
             </div>
-            <div className="w-auto md:w-full flex flex-col gap-2 md:gap-5 relative">
+            <div className="w-full flex flex-col gap-2 md:gap-5 relative">
               <label
                 htmlFor="email"
-                className="font-medium font-frank-ruhl-libre text-2xl text-[#868686]"
+                className="font-medium font-frank-ruhl-libre text-xl md:text-2xl text-[#868686]"
               >
                 Email Address
               </label>
               <input
                 onChange={manageEmail}
                 value={email}
-                className="border border-[#C5C5C5] outline-none bg-transparent rounded-[20px] py-2 md:py-3  px-4 text-2xl"
+                className="border border-[#C5C5C5] outline-none bg-transparent rounded-[20px] py-2 md:py-3  px-4 text-xl md:text-2xl"
                 type="email"
                 id="email"
               />
-              <p className="text-xl text-red-800 absolute left-0 top-[103%]">
+              <p className="text-sm md:text-xl text-red-800 absolute left-0 top-[103%]">
                 {emailErr}
               </p>
             </div>
-            <div className="w-auto md:w-full flex flex-col gap-2 md:gap-5 relative">
+            <div className="w-full flex flex-col gap-2 md:gap-5 relative">
               <label
                 htmlFor="password"
-                className="font-medium font-frank-ruhl-libre text-2xl text-[#868686]"
+                className="font-medium font-frank-ruhl-libre text-xl md:text-2xl text-[#868686]"
               >
                 Password
               </label>
               <input
                 onChange={managePassword}
                 value={password}
-                className="border border-[#C5C5C5] outline-none bg-transparent rounded-[20px] py-2 md:py-3  px-4 text-2xl"
+                className="border border-[#C5C5C5] outline-none bg-transparent rounded-[20px] py-2 md:py-3  px-4 text-xl md:text-2xl"
                 type="password"
                 id="password"
               />
-              <p className="text-xl text-red-800 absolute left-0 top-[103%]">
+              <p className="text-sm md:text-xl text-red-800 absolute left-0 top-[103%]">
                 {passwordErr}
               </p>
               <FaEye
                 onClick={() => {
                   setPasswordEye(!passwordEye);
                 }}
-                className={`absolute right-5 top-[65%] text-xl ${
+                className={`absolute right-5 top-[65%] text-[#868686] text-xl ${
                   passwordEye ? "opacity-100" : "opacity-0"
                 }`}
               />
@@ -167,13 +167,18 @@ const SignIn = () => {
                 onClick={() => {
                   setPasswordEye(!passwordEye);
                 }}
-                className={`absolute right-5 top-[65%] text-xl ${
+                className={`absolute right-5 top-[65%] text-[#868686]  text-xl ${
                   passwordEye ? "opacity-0" : "opacity-100"
                 }`}
               />
             </div>
-            <div className="w-auto md:w-full mt-4 flex gap-4 items-baseline">
-              <input className="" type="checkbox" name="" id="" />
+            <div className="w-auto md:w-full mt-4 flex gap-4 items-center">
+              <input
+                className="appearance-none relative border border-[#CFCFCF] w-6 h-6 rounded-[5px] after:absolute after:w-3 after:h-3 after:top-1/2 after:-translate-x-1/2 after:left-1/2 after:-translate-y-1/2 checked:after:bg-blue-700"
+                type="checkbox"
+                name=""
+                id=""
+              />
               <label
                 htmlFor=""
                 className="font-frank-ruhl-libre text-base md:text-2xl font-medium text-[#868686]"
@@ -194,7 +199,7 @@ const SignIn = () => {
             </div>
             <button
               onClick={manageSubmit}
-              className="font-frank-ruhl-libre text-2xl font-medium bg-banner-color rounded-[20px] py-4 mb-5 w-full md:w-[472px] hover:bg-slate-300 transition-all duration-300"
+              className="font-frank-ruhl-libre text-xl md:text-2xl font-medium bg-banner-color rounded-[20px] py-2 md:py-4 mb-5 w-full md:w-[472px] hover:bg-box-color hover:shadow-xl transition-all duration-300"
               type="submit"
             >
               Create Account

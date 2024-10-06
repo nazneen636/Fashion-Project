@@ -10,7 +10,7 @@ const ProductItem = ({
 }) => {
   return (
     <div
-      className={`card overflow-hidden flex flex-col gap-4 bg-white ${className} w-[318px] h-[526px] duration-500 transition-all`}
+      className={`card overflow-hidden flex flex-col gap-4 bg-white ${className} w-full md:w-[318px] h-[526px] duration-500 transition-all`}
     >
       <img className="h-[404px]" src={productImg} alt="" />
       <div className="px-[22px] flex flex-col gap-[11px]">

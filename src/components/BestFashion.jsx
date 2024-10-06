@@ -7,7 +7,7 @@ import Title from "../layers/Title";
 const BestFashion = () => {
   return (
     <div>
-      <Container className="relative flex flex-col md:flex-row items-center justify-between mb-8 md:mb-[335px] tracking-wide">
+      <Container className="relative px-4 md:px-0 flex flex-col md:flex-row items-center justify-between mb-8 md:mb-[335px] tracking-wide">
         <div className="right md:hidden block mt-6">
           <Title
             className=" max-w-[437px]"
@@ -55,7 +55,9 @@ Since 2010"
           </div>
           <div className="flex flex-col items-center justify-center">
             <h3 className="font-podkova font-bold text-[64px] ">4500+</h3>
-            <p className="font-poppins font-medium text-[28px]">Best Reviews</p>
+            <p className="text-nowrap font-poppins font-medium text-[28px]">
+              Best Reviews
+            </p>
           </div>
         </div>
       </Container>

@@ -171,6 +171,46 @@ const PeopleSay = () => {
     ),
     responsive: [
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+          centerMode: true,
+          centerPadding: "0",
+          // centerMode: false,
+          nextArrow: <SampleNextArrow />,
+          prevArrow: <SamplePrevArrow />,
+          appendDots: (dots) => (
+            <div
+              style={{
+                backgroundColor: "transparent",
+                borderRadius: "50%",
+                position: "absolute",
+                bottom: "-80px",
+                left: "50%",
+                // transform: "translateX(-50%)",
+                padding: "0px",
+              }}
+            >
+              <ul
+                style={{
+                  width: "100%",
+                  marginTop: "20px",
+                  display: "flex",
+                  gap: "8px",
+                }}
+              >
+                {" "}
+                {dots}{" "}
+              </ul>
+            </div>
+          ),
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,

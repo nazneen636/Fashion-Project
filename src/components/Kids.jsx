@@ -17,8 +17,8 @@ const Kids = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 100,
+    speed: 3000,
+    autoplaySpeed: 0,
     cssEase: "linear",
   };
   return (

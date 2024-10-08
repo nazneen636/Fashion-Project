@@ -149,7 +149,7 @@ const SignIn = () => {
                 onChange={managePassword}
                 value={password}
                 className="border border-[#C5C5C5] outline-none bg-transparent rounded-[20px] py-2 md:py-3  px-4 text-xl md:text-2xl"
-                type="password"
+                type={passwordEye ? "text" : "password"}
                 id="password"
               />
               <p className="text-sm md:text-xl text-red-800 absolute left-0 top-[103%]">
